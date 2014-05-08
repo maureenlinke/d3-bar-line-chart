@@ -1,0 +1,113 @@
+h1 {
+    font: normal 20px/1.3'Futura Today Light', 'arial';
+    padding: 15px 0 5px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    text-align: left;
+}
+body {
+    font: 11px'Helvetica Neue', Helvetica, arial, sans-serif;
+}
+/*  OVERRIDES  */
+ .head-wrap {
+    background: #fff;
+    padding: 0;
+    margin: 0 0 15px 0;
+    width: 920px;
+}
+#content {
+    margin: 5px;
+    padding: 5px 5px 10px 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    width: 850px;
+    height: 500px;
+}
+/*CHART */
+ path {
+    stroke: #fa6622;
+    stroke-width: 2;
+    fill: none;
+}
+.axis path {
+    fill: none;
+    stroke: #939598;
+    shape-rendering: crispEdges;
+}
+rectangle {
+    visibility: hidden;
+}
+.chart {
+    width: 1000px;
+    margin-top: 50px;
+    height: 550px;
+    margin-left:30px;
+    margin-right:40px;
+}
+div.tooltip {
+    position: absolute;
+    max-width:200px;
+    height: 28px;
+    padding: 2px;
+    font: 12px;
+    background: #fff;
+    padding:5px;
+    text-align: left;
+    white-space: normal;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+div.tooltip h1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #EBEBEB;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 1px 1px 0 0;
+    margin: 0;
+    font: 12px/1.231'Futura Today', Helvetica, arial, sans-serif;
+    text-transform: uppercase;
+}
+div.tooltip p {
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    padding: 0 13px 10px;
+}
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+.focus circle {
+    fill: none;
+}
+ .source {
+    margin-bottom: 11px;
+}
+#footnote {
+    padding-top: 5px;
+}
+.domain {
+    stroke-width: 1px;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+    stroke-width: 0;
+}
+.footnote {
+    font-size: 9px;
+}

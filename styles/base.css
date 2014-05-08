@@ -1,0 +1,531 @@
+body {font: 12px/1.231 'Helvetica Neue', Helvetica, arial, sans-serif;}
+h1, h2, h3, h4, h5, h6 {color:#333;}
+h1 {font-weight: 700; font-size: 36px;}
+h3 {font-family: 'Helvetica Neue', Helvetica, arial, sans-serif; font-weight: 700; color: #333; margin: 5px 0 3px;}
+p {font: normal 12px/1.5 'Helvetica Neue', Helvetica, arial, sans-serif; color: #666;}
+strong {font-weight: 700;}
+a {text-decoration: none;}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html, body {
+    line-height: 1;
+    width: 100% !important;
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+h4 {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 170px;
+    height: 11px;
+    color: #888;
+}
+.p1 {
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+h3 {
+    font-size: 14px;
+    font-weight: normal;
+    font-family:'Futura Today Bold';
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 170px;
+    height: 11px;
+    color: #888;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content:'';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    margin: 0;
+}
+@font-face {
+    font-family:'Futura Today';
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.eot);
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.eot?#iefix) format('embedded-opentype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.woff) format('woff'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.ttf) format('truetype'), url(../../fonts/futura_bold-webfont.svg#FuturaBold) format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family:'Futura Today Light';
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.eot);
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.eot?#iefix) format('embedded-opentype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.woff) format('woff'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.ttf) format('truetype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_light-webfont.svg#FuturaLight) format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family:'Futura Today Bold';
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.eot);
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.eot?#iefix) format('embedded-opentype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.woff) format('woff'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.ttf) format('truetype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_bold-webfont.svg#FuturaBold) format('svg');
+    font-style: normal;
+}
+/* =============================================================================
+   Primary Styles
+   ========================================================================== */
+ body {
+    font: 12px/1.231 Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color:#333;
+}
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+h3 {
+    font-family:'helvetica', 'arial', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin: 5px 0 3px;
+}
+p {
+    font: normal 12px/1.5'arial', 'helvetica', sans-serif;
+    color: #666;
+}
+strong {
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+    max-width: 100%;
+}
+img.floatleft {
+    float: left;
+    margin: 0 10px 0 0;
+}
+img.floatright {
+    float: right;
+    margin: 0 0 0 10px;
+}
+cite {
+    float: right;
+    font-size: 11px;
+    color: #707070
+}
+
+/* =============================================================================
+   BASE PROJECT CLASSES
+   ========================================================================== */
+ .outter-wrap {
+    background:#fff;
+    margin: 0 auto 20px;
+    padding: 0;
+    width:100%;
+    max-width:1000px;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: relative;
+}
+.outter-wrap:before {
+    content:"";
+    display: block;
+    border-top:10px solid rgb(0, 155, 255);
+    position: relative;
+    width: 100%;
+    left: -1px;
+}
+.head-wrap {
+    background: #f8f8f8 url('../graphics/head-wrap-bg.jpg') bottom repeat-x;
+    padding: 0 0 20px;
+    margin: 0 0 15px;
+}
+.head-wrap h1 {
+    font: 700 32px/34px'helvetica', 'arial', sans-serif;
+    margin:0;
+    padding: 15px 0 0;
+}
+.head-wrap h2 {
+    font: normal 30px/1.3 'Futura Today Light','arial';;
+    padding: 15px 0 5px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    text-align: center;
+}
+
+.head-wrap p {
+    font:normal 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.main-content-wrap {
+    display: block;
+    margin: 0 20px;
+}
+.main-content-wrap p {
+    margin: 0 0 20px;
+}
+.footer-wrap {
+    padding: 10px;
+    margin: 30px 0 0;
+    background: #ececec;
+    min-height: 20px;
+}
+.footer-wrap h6 {
+    float: left;
+    color: #999;
+    font: normal 11px/1.5 arial, Helvetica, sans-serif;
+    margin: 2px 0 0 10px;
+    width: 80%;
+}
+.footer-wrap h6 strong {
+    font-weight: 700;
+}
+.footer-wrap a.credits_btn {
+    background: url('../graphics/btns/info-btn/base.png');
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 23px;
+    width: 23px;
+}
+.span_4_of_4 {
+    width: 100%;
+}
+.span_4_of_4 h3 {
+    font-size: 28px;
+    line-height: 1.3em;
+}
+.span_3_of_4 {
+    width: 74.6%;
+}
+.span_3_of_4 h3 {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+.span_2_of_4 {
+    width: 49.2%;
+}
+.span_2_of_4 h3 {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+.span_1_of_4 {
+    width: 23.8%;
+}
+.span_1_of_4 h3 {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+/* =============================================================================
+   MEDIA QUERIES FOR RESPONSIVE GRID LAYOUT 
+   ========================================================================== */
+
+/* Large desktop */
+ @media (min-width: 1200px) {
+}
+/* Portrait tablet to landscape and desktop */
+ @media (min-width: 768px) and (max-width: 979px) {
+}
+/* Landscape phone to portrait tablet */
+ @media (max-width: 767px) {
+}
+/* Landscape phones and down */
+ @media (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_4_of_4, .span_3_of_4, .span_2_of_4, .span_1_of_4 {
+        width: 100%;
+    }
+    .span_4_of_4 h3, .span_3_of_4 h3, .span_2_of_4 h3, .span_1_of_4 h3 {
+        font-size: 24px;
+        margin: 5px 0 0;
+    }
+}
+/*  SECTIONS  ============================================================================= */
+ .section {
+    clear: both;
+    padding: 0 20px;
+    margin: 0px;
+}
+/*  GRID COLUMN SETUP   ==================================================================== */
+ .col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+    margin-left: 0;
+}
+/* all browsers except IE6 and lower */
+
+/* =============================================================================
+   Helper Classes
+   ========================================================================== */
+
+/* Hide from both screenreaders and browsers */
+ .hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/* Hide only visually, but have it available for screenreaders */
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+ .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+ .invisible {
+    visibility: hidden;
+}
+.hidden {
+    visibility: hidden;
+}
+/* CLEAR FLOAT */
+ .cf {
+    zoom: 1;
+}
+.cf:before, .cf:after {
+    content:"";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.txt-shadow {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.box-shadow {
+    -moz-box-shadow: 0px 0px 16px -3px rgb(204, 204, 204);
+    -webkit-box-shadow: 0px 0px 16px -3px rgb(204, 204, 204);
+    box-shadow: 0px 0px 16px -3px rgb(204, 204, 204);
+}
+.no-shadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.rounded-edges {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /* future proofing */
+    -khtml-border-radius: 3px;
+    /* for old Konqueror browsers */
+}
+.bdr-top {
+    border-top: solid 1px #ececec;
+}
+.bdr-btm {
+    border-bottom: solid 1px #ececec;
+}
+.bdr-right {
+    border-right: solid 1px #e0e0dc;
+}
+.bdr-left {
+    border-left: solid 1px #e0e0dc;
+}
+.bdr-top-dott {
+    border-top: dotted 3px #e0e0dc;
+}
+.bdr-btm-dott {
+    border-bottom: dotted 3px #e0e0dc;
+}
+.bdr-right-dott {
+    border-right: dotted 1px #e0e0dc;
+}
+.bdr-left-dott {
+    border-left: dotted 1px #e0e0dc;
+}
+.txt-center {
+    text-align: center;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+/*  --------------------------------------------------
+/* MARGINS AND PADDING
+-------------------------------------------------- */
+ .m05 {
+    margin: 5px
+}
+.mB05 {
+    margin-bottom: 5px
+}
+.mL05 {
+    margin-left: 5px
+}
+.mR05 {
+    margin-right: 5px
+}
+.mT05 {
+    margin-top: 5px
+}
+.p05 {
+    padding: 5px
+}
+.pB05 {
+    padding-bottom: 5px
+}
+.pL05 {
+    padding-left: 5px
+}
+.pR05 {
+    padding-right: 5px
+}
+.pT05 {
+    padding-top: 5px
+}
+.m10 {
+    margin: 10px
+}
+.mB10 {
+    margin-bottom: 10px
+}
+.mL10 {
+    margin-left: 10px
+}
+.mR10 {
+    margin-right: 10px
+}
+.mT10 {
+    margin-top: 10px
+}
+.p10 {
+    padding: 10px
+}
+.pB10 {
+    padding-bottom: 10px
+}
+.pL10 {
+    padding-left: 10px
+}
+.pR10 {
+    padding-right: 10px
+}
+.pT10 {
+    padding-top: 10px
+}
+.m15 {
+    margin: 15px
+}
+.mB15 {
+    margin-bottom: 15px
+}
+.mL15 {
+    margin-left: 15px
+}
+.mR15 {
+    margin-right: 15px
+}
+.mT15 {
+    margin-top: 15px
+}
+.p15 {
+    padding: 15px
+}
+.pB15 {
+    padding-bottom: 15px
+}
+.pL15 {
+    padding-left: 15px
+}
+.pR15 {
+    padding-right: 15px
+}
+.pT15 {
+    padding-top: 15px
+}
+.m20 {
+    margin: 20px
+}
+.mB20 {
+    margin-bottom: 20px
+}
+.mL20 {
+    margin-left: 20px
+}
+.mR20 {
+    margin-right: 20px
+}
+.mT20 {
+    margin-top: 20px
+}
+.p20 {
+    padding: 20px
+}
+.pB20 {
+    padding-bottom: 20px
+}
+.pL20 {
+    padding-left: 20px
+}
+.pR20 {
+    padding-right: 20px
+}
+.pT20 {
+    padding-top: 20px
+}
+.m30 {
+    margin: 30px
+}
+.mB30 {
+    margin-bottom: 30px
+}
+.mL30 {
+    margin-left: 30px
+}
+.mR30 {
+    margin-right: 30px
+}
+.mR38 {
+    margin-right: 38px
+}
+.mT30 {
+    margin-top: 30px
+}
+.p30 {
+    padding: 30px
+}
+.pB30 {
+    padding-bottom: 30px
+}
+.pL30 {
+    padding-left: 30px
+}
+.pR30 {
+    padding-right: 30px
+}
+.pT30 {
+    padding-top: 30px
+}

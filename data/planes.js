@@ -1,0 +1,119 @@
+var planes =
+
+[{
+    "date": 19830101,
+    "deaths": 1068,
+    "accidents": 107
+}, {
+    "date": 19840101,
+    "deaths": 1042,
+    "accidents": 104
+}, {
+    "date": 19850101,
+    "deaths": 956,
+    "accidents": 97
+}, {
+    "date": 19860101,
+    "deaths": 967,
+    "accidents": 95
+}, {
+    "date": 19870101,
+    "deaths": 837,
+    "accidents": 92
+}, {
+    "date": 19880101,
+    "deaths": 797,
+    "accidents": 87
+}, {
+    "date": 19890101,
+    "deaths": 769,
+    "accidents": 80
+}, {
+    "date": 19900101,
+    "deaths": 770,
+    "accidents": 79
+}, {
+    "date": 19910101,
+    "deaths": 800,
+    "accidents": 79
+}, {
+    "date": 19920101,
+    "deaths": 867,
+    "accidents": 85
+}, {
+    "date": 19930101,
+    "deaths": 744,
+    "accidents": 91
+}, {
+    "date": 19940101,
+    "deaths": 730,
+    "accidents": 91
+}, {
+    "date": 19950101,
+    "deaths": 735,
+    "accidents": 83
+}, {
+    "date": 19960101,
+    "deaths": 636,
+    "accidents": 77
+}, {
+    "date": 19970101,
+    "deaths": 631,
+    "accidents": 72
+}, {
+    "date": 19980101,
+    "deaths": 625,
+    "accidents": 75
+}, {
+    "date": 19990101,
+    "deaths": 619,
+    "accidents": 65
+}, {
+    "date": 20000101,
+    "deaths": 596,
+    "accidents": 66
+}, {
+    "date": 20010101,
+    "deaths": 562,
+    "accidents": 68
+}, {
+    "date": 20020101,
+    "deaths": 581,
+    "accidents": 67
+}, {
+    "date": 20030101,
+    "deaths": 633,
+    "accidents": 67
+}, {
+    "date": 20040101,
+    "deaths": 559,
+    "accidents": 65
+}, {
+    "date": 20050101,
+    "deaths": 563,
+    "accidents": 72
+}, {
+    "date": 20060101,
+    "deaths": 706,
+    "accidents": 64
+}, {
+    "date": 20070101,
+    "deaths": 496,
+    "accidents": 69
+}, {
+    "date": 20080101,
+    "deaths": 494,
+    "accidents": 69
+}, {
+    "date": 20090101,
+    "deaths": 474,
+    "accidents": 72
+}, {
+    "date": 20100101,
+    "deaths": 454,
+    "accidents": 66
+}, {
+    "date": 20110101,
+    "deaths": 444,
+    "accidents": 65
+}];
