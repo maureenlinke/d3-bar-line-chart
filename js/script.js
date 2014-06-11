@@ -127,8 +127,8 @@ d3.csv("data/crashes.csv", function(error, data) {
             .tickFormat(""));
 
     var div = d3.select(".chart").append("div")
-        .attr("class", "tooltip");
-    // .style("opacity", 2);
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
 
     ///BARS
@@ -152,16 +152,16 @@ d3.csv("data/crashes.csv", function(error, data) {
         .attr("width", width / data.length - 4)
         .on("mouseover", function(d) {
             div.transition()
-                .duration(200)
+                .duration(50)
                 .style("opacity", .9);
-            div.html("<p>" + formatTime(d.date) + "<br/>" + d.deaths + " deaths" + "</p>")
-                .style("left", (d3.event.pageX) + "px")
+            div.html("<h3>"+ formatTime(d.date) + "</h3>" + "<br/>" +"<p>Deaths: " +  "<strong>"+ d.deaths + "</strong>"+"</p>")
+                .style("left", (d3.event.pageX) + 10+"px")
                 .style("top", (d3.event.pageY - 28) + "px");
         })
         .on("mouseout", function(d) {
             div.transition()
-                .duration(200)
-                .style("opacity", 0);
+                .duration(50)
+                .style("opacity", 1e-6);
         });
 
     svg.append("path") // Add the line path.
@@ -190,7 +190,7 @@ d3.csv("data/crashes.csv", function(error, data) {
         .on("mouseout", function(d) {
             div.transition()
                 .duration(50)
-                .style("opacity", 1);
+                .style("opacity", 1e-6);
         })
         .on("mousemove", mousemove);
 
@@ -204,9 +204,9 @@ d3.csv("data/crashes.csv", function(error, data) {
         //move focus around
         focus.attr("transform", "translate(" + x(d.date) + "," + y(d.accidents) + ")");
         div.transition()
-            .duration(200)
+            .duration(50)
             .style("opacity", .9);
-        div.html("<p>" + formatTime(d.date) + "<br/>" + "<strong>" + d.accidents + "</strong>" + " accidents " + "</p>")
+        div.html("<h3>"+ formatTime(d.date) + "</h3>" + "<br/>" +"<p>Rate: " + "<strong>"+d.accidents + "</strong>" + " accidents " + "</p>")
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
     }
