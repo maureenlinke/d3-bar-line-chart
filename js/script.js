@@ -47,7 +47,7 @@ var line = d3.svg.line()
     .interpolate("cardinal")
     .tension(0.9);
 
-var svg = d3.select(".chart").append("svg")
+var svg = d3.select(".chart")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
